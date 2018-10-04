@@ -1,0 +1,5 @@
+from django.conf.urls.defaults import *
+from twitter import views
+urlpatterns = patterns('',
+                      (r'^$', main_page),
+)

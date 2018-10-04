@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}{{ username }}{% endblock %}
+
+
+{% block head %}Tweets for {{ username }}{% endblock %}
+{% block content %}
+{% if tweets %}
+<ul>
+{% for tweet in tweets %}
+<li>
+{{ tweet.tweet }}</li><p></p>
+{% endfor %}
+</ul>
+{% else %}
+<p>No tweets found.</p>
+{% endif %}
+{% endblock %}

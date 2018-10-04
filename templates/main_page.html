@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Welcome to Django Tweets{% endblock %}
+{% block head %}Welcome to Django Tweets{% endblock %}
+{% block content %}
+{% if user.username %}
+<p>Welcome {{ user.username }}!
+Here you can create and share Tweets!</p>
+{% else %}
+<p>Welcome anonymous user!
+You need to <a href="/twitter/login/">login</a>
+before you can store and share bookmarks.</p>
+{% endif %}
+{% endblock %}

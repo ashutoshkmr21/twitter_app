@@ -1,0 +1,5 @@
+Hi {{ name }},
+{{ sender }} has sent you a friend request,
+To accept the invitation, please click the link below:
+{{ link }}
+
